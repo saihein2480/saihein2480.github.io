@@ -41,9 +41,7 @@ function addProductList() {
     amountCell.innerHTML = amount;
     priceCell.innerHTML = "$" + price;
     updateNetPrice(price);
-    totalPrice =0;
-    vatRate = 0;
-    totalPriceElement.innerHTML = totalPrice.toFixed(2);
+    calculateVAT();
 }
 var netPrice = 0
 function updateNetPrice(price) {

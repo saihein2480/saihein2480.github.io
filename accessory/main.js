@@ -65,4 +65,9 @@ $(document).ready(function() {
     $("#total_price").click(function(){
         calculateVAT();
     });
+    $("#product_list").css({
+        "background-color":"yellow",
+        "border-collapse" : "collapse",
+        "width" : "60vw"
+    });
 });

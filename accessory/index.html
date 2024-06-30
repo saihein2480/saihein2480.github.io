@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Accessories </title>
     <link rel="stylesheet" href="./css/global.css">
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <h1>Car Accessories</h1>
@@ -23,7 +24,7 @@
     <label for="amount">Amount:</label>
     <input type="number" name="amount" id="amount" min="1" value="1">
     <br/>
-    <button onclick="addProductList()">
+    <button id="add_button">
         Add
     </button>
     <h2>Product List</h2>
@@ -36,10 +37,9 @@
         </tr>
     </table>
     <p class="net">Net Price: $ <span id="netPrice">0</span></p>
-    <script src="main.js"></script>
     <label for="vat">VAT %:</label>
     <input type="number" name="vat" id="vat" value="7" min="0">
-    <button onclick="calculateVAT()">Total Price</button>
+    <button id="total_price">Total Price</button>
     <p class="total">Total Price: $ <span id="totalPrice">0</span></p>
 </body>
 </html>

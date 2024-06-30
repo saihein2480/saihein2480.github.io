@@ -56,5 +56,13 @@ function calculateVAT() {
     var vatRate = document.getElementById("vat").value;
     var totalPrice = netPrice * (1 + vatRate / 100);
     totalPriceElement.innerHTML = totalPrice.toFixed(2);
-    
 }
+
+$(document).ready(function() {
+    $("#add_button").click(function() {
+        addProductList();
+    });
+    $("#total_price").click(function(){
+        calculateVAT();
+    });
+});
